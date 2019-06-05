@@ -1,0 +1,22 @@
+{
+  "name": "notification-server",
+  "version": "1.0.0",
+  "description": "notification server in firebase",
+  "main": "index.js",
+  "author": "Mehdi <mehdiab92@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run nodemon index.js",
+    "start:database": "yarn run json-server data.json",
+    "generate-vapid": "yarn run web-push generate-vapid-keys --json > vapid.json"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "json-server": "^0.15.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.1",
+    "web-push": "^3.3.5"
+  }
+}
